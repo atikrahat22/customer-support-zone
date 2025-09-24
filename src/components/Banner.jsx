@@ -1,24 +1,20 @@
 import React from 'react';
 import './Banner.css';
+import vector1 from '../assets/image/vector1.png';
+
 
 const Banner = ({ inProgressCount, resolvedCount }) => {
   return (
-    <section className="banner">
-      <div className="banner-content">
-        <h1>Welcome to Customer Support Zone</h1>
-        <p>Your one-stop solution for all customer queries and support tickets.</p>
-        <div className="stats-container">
-          <div className="stat-box">
-            <h3>In Progress</h3>
-            <p className="count">{inProgressCount}</p>
-          </div>
-          <div className="stat-box">
-            <h3>Resolved</h3>
-            <p className="count">{resolvedCount}</p>
-          </div>
-        </div>
+    <div className="banner">
+      <div className="status-box in-progress-box" style={{ backgroundImage: `url(${vector1})` }}>
+        <p>In-Progress</p>
+        <h2>{inProgressCount}</h2>
       </div>
-    </section>
+      <div className="status-box resolved-box" style={{ backgroundImage: `url(${vector1})` }}>
+        <p>Resolved</p>
+        <h2>{resolvedCount}</h2>
+      </div>
+    </div>
   );
 };
 

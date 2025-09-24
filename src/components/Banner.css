@@ -1,45 +1,76 @@
 .banner {
-  background: linear-gradient(135deg, #1abc9c, #3498db);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-}
-
-.banner-content h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.banner-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.stats-container {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 40px;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.stat-box {
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 1.5rem;
-  border-radius: 8px;
-  min-width: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.status-box {
+  flex: 1;
+  max-width: 670px;
+  height: 200px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-size: cover;
+  background-position: center;
 }
 
-.stat-box h3 {
-  margin: 0 0 0.5rem;
-  font-size: 1.2rem;
+
+
+.status-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.9;
 }
 
-.stat-box .count {
-  font-size: 2.5rem;
-  font-weight: bold;
+.in-progress-box::before {
+  background: linear-gradient(90deg, #7f53ff 0%, #647dee 100%);
+}
+
+.resolved-box::before {
+  background: linear-gradient(90deg, #2ecc71 0%, #1abc9c 100%);
+}
+
+.status-box p,
+.status-box h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.status-box p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.status-box h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .status-box {
+    max-width: 90%;
+    width: 100%;
+  }
 }
