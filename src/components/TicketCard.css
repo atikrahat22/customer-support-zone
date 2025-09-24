@@ -1,0 +1,95 @@
+.ticket-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  transition: box-shadow 0.2s;
+  border-left: 5px solid #e5e7eb;
+  min-width: 320px;
+}
+.ticket-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-badge {
+  display: flex;
+  align-items: center;
+  font-size: 0.95em;
+  font-weight: 500;
+  background: #f3f4f6;
+  border-radius: 20px;
+  padding: 2px 12px;
+  color: #22c55e;
+  gap: 6px;
+}
+.status-badge.open {
+  background: #e7fbe9;
+  color: #22c55e;
+}
+.status-badge, .status-badge.in-progress {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #22c55e;
+  display: inline-block;
+  margin-right: 6px;
+}
+.status-badge.in-progress .status-dot {
+  background: #ca8a04;
+}
+.status-badge.resolved .status-dot {
+  background: #2563eb;
+}
+.description {
+  margin: 10px 0 8px 0;
+  color: #374151;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.95em;
+  color: #6b7280;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+.ticket-id {
+  color: #64748b;
+  font-weight: 500;
+}
+.priority-label {
+  font-weight: bold;
+  font-size: 0.95em;
+  padding: 2px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+.priority-high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.priority-medium {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+.priority-low {
+  background: #d1fae5;
+  color: #059669;
+}
+.customer-info {
+  color: #374151;
+}
+.date {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
