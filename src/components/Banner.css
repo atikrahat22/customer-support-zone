@@ -21,8 +21,17 @@
   position: relative;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background-size: cover;
-  background-position: center;
+  background-color: #f0f0f0;
+  background-image:
+    radial-gradient(circle at 10px 10px, rgba(255,255,255,0.3) 3px, transparent 3px),
+    radial-gradient(circle at 30px 30px, rgba(255,255,255,0.2) 2px, transparent 2px),
+    url(/assets/image/vector1.png);
+  background-size:
+    20px 20px,
+    40px 40px,
+    cover;
+  background-position: 0 0, 20px 20px, center;
+  background-repeat: repeat, repeat, no-repeat;
 }
 
 
@@ -35,7 +44,8 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  opacity: 0.9;
+  opacity: 0.7;
+  background-blend-mode: overlay;
 }
 
 .in-progress-box::before {
