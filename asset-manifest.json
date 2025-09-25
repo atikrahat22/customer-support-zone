@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/customer-support-zone/static/css/main.663d067d.css",
+    "main.js": "/customer-support-zone/static/js/main.9920b6b4.js",
+    "static/media/vector1.png": "/customer-support-zone/static/media/vector1.f0b31c1585cfcd8bd22b.png",
+    "index.html": "/customer-support-zone/index.html",
+    "main.663d067d.css.map": "/customer-support-zone/static/css/main.663d067d.css.map",
+    "main.9920b6b4.js.map": "/customer-support-zone/static/js/main.9920b6b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.663d067d.css",
+    "static/js/main.9920b6b4.js"
+  ]
+}
