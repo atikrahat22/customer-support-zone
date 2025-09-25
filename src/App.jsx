@@ -35,12 +35,13 @@ export default function App() {
     <div className="min-h-screen flex flex-col max-w-[1200px] mx-auto">
       <Navbar />
       <Banner inProgressCount={tasks.length} resolvedCount={resolved.length} />
+      <h2 className="section-heading  ">Customer Tickets</h2>
 
       {/* main layout: mobile = single column, md+ = 2 columns */}
       <main className="flex-1 grid gap-4 grid-cols-1 md:grid-cols-3 p-4 lg:p-10">
         <section className="md:col-span-2">
           {/* Moved the heading here to be part of the main layout */}
-          <h2 className="section-heading">Customer Tickets</h2>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
             {tickets.map(ticket => (
               <TicketCard

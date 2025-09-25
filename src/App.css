@@ -82,6 +82,8 @@ body {
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 1rem;
+  margin-left: 50px;
+  
 }
 
 .task-status-box {
