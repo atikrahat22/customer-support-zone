@@ -1,6 +1,6 @@
 import React from 'react';
-import './TicketCard.css'; // Import the new CSS file
-import { FaCalendarAlt } from 'react-icons/fa'; // Import the calendar icon
+import './TicketCard.css'; 
+import { FaCalendarAlt } from 'react-icons/fa'; 
 
 const TicketCard = ({ ticket, onAddToTask }) => {
   const getPriorityClass = (priority) => {
