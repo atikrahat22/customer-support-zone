@@ -1,0 +1,8 @@
+name: New prompt
+version: 0.0.1
+schema: v1
+prompts:
+  - name:deepseek-r1:7b a4c9d2f6e8c5a0/test.yaml
+    description: New prompt
+    prompt: Please write a thorough suite of unit tests for this code, making sure
+      to cover all relevant edge cases
